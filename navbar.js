@@ -1,7 +1,7 @@
 const openDrawerButton = document.querySelector("#burger");
 const closeDrawerButton = document.getElementById("closeDrawerButton");
 const mobileDrawer = document.getElementById("mobileDrawer");
-
+mobileDrawer.style.left = "-80%";
  // Function to open the mobile drawer
  function openDrawer() {
     mobileDrawer.style.left = "0";
