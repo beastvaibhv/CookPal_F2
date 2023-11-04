@@ -29,7 +29,7 @@ closeDrawerButton.addEventListener("click", () => {
 
  // Toggle menu icon for screens with width 786px or less
  function toggleMenuIcon() {
-    if (window.innerWidth <= 786) {
+    if (window.innerWidth <= 800) {
         nav.style.display = "none"; // Hide the navigation bar
         openDrawerButton.style.display = "block"; // Show the menu icon
     } else {
