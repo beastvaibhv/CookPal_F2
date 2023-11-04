@@ -17,3 +17,28 @@ openDrawerButton.addEventListener("click", openDrawer);
 
 // Event listener for closing the drawer
 closeDrawerButton.addEventListener("click", closeDrawer);
+
+openDrawerButton.addEventListener("click", () => {
+    mobileDrawer.style.display = "block";
+});
+
+closeDrawerButton.addEventListener("click", () => {
+    mobileDrawer.style.display = "none";
+});
+
+
+ // Toggle menu icon for screens with width 786px or less
+ function toggleMenuIcon() {
+    if (window.innerWidth <= 786) {
+        nav.style.display = "none"; // Hide the navigation bar
+        openDrawerButton.style.display = "block"; // Show the menu icon
+    } else {
+        nav.style.display = "flex"; // Display the navigation bar
+        openDrawerButton.style.display = "none"; // Hide the menu icon
+        mobileDrawer.style.display = "none"; // Hide the mobile drawer
+    }
+}
+
+// Initial check and event listener for screen width
+toggleMenuIcon();
+window.addEventListener("resize", toggleMenuIcon);
