@@ -6,12 +6,13 @@
     <title>CookPal</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./drawer.css">
 </head>
 <body>
     <nav>
         <div class="nav-container">
             <div class="top-nav">
-            <span class="material-symbols-outlined burger" onclick=" onBurgerClicked()">
+            <span class="material-symbols-outlined " id="burger" >
                 menu
                 </span>
             <span class="active">
@@ -61,7 +62,7 @@
         </div>
         
       </div>
-  
+     
       <!-- Toggle Recipe Type  -->
       <div class="button-container">
         <button id="showAllBtn">Show All</button>
@@ -104,7 +105,34 @@
         <div id="recipeContainer" class="recipe-container"></div>
       </div>
   
+      <aside class="mobile-drawer" id="mobileDrawer" style="left: 0px; display: block;">
+        <div class="menu-container"  >
+            <nav>
+                <div class="logo"  >
+                    <img src="./assets/Cookpal 1logo.svg" alt="Logo">
+                </div><br>
+                <ul 
+                class="items" 
+                style="display: flex;
+                 flex-direction: column;
+                  text-align: left; 
+                  margin-left: 0%;">
 
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#explore" class="nav-link">Explore</a></li>
+                    <li><a href="#help" class="nav-link">Help</a></li>
+                </ul>
+            </nav>
+            <div class="profile drawer-profile"  >
+                <label for="profilePictureInput" class="profile-picture-label">
+                    <img src="./assets/Ellipse 2user.png" alt="Profile Picture" class="profile-picture">
+                </label>
+            </div>
+        </div>
+        <div class="close-drawer" id="closeDrawerButton"  >
+            <i class="material-icons">close</i>
+        </div>
+    </aside>
 
 
     <!-- footer  -->

@@ -1,12 +1,19 @@
-const burgerIcon = document.querySelector('.burger');
-const linkContainer = document.querySelector('.link');
+const openDrawerButton = document.querySelector("#burger");
+const closeDrawerButton = document.getElementById("closeDrawerButton");
+const mobileDrawer = document.getElementById("mobileDrawer");
 
-function onBurgerClicked() {
-    let navBar = document.querySelector(".nav-container");
-    if (navBar.className === "nav-container") {
-      navBar.className += " responsive";
-    } else {
-      navBar.className = "nav-container";
-    }
+ // Function to open the mobile drawer
+ function openDrawer() {
+    mobileDrawer.style.left = "0";
 }
 
+// Function to close the mobile drawer
+function closeDrawer() {
+    mobileDrawer.style.left = "-80%"; // Hide the drawer
+}
+
+// Event listener for opening the drawer
+openDrawerButton.addEventListener("click", openDrawer);
+
+// Event listener for closing the drawer
+closeDrawerButton.addEventListener("click", closeDrawer);

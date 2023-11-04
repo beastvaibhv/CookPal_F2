@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Libre+Baskerville&family=Lora:wght@600&family=Poppins&display=swap");
+
+
 * {
     box-sizing: border-box;
   }
@@ -40,7 +43,7 @@ nav{
 .links>a>img{
     padding: 0;
 }
-.burger{
+#burger{
 display: none;
 
 }
@@ -334,7 +337,7 @@ li{
         display: none;
     }
     
-    .burger {
+    #burger {
         display: block; 
         cursor: pointer;
     }
